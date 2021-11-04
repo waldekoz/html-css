@@ -1,0 +1,30 @@
+.driver {
+    background-image: url("../img/edu.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    .container {
+        min-height: 100vh;
+        padding: 120px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+
+        .intro {
+            color: $driverTextColor;
+            margin: 0 0 20px 0;
+            @include fluid-type(22px, 48px);
+        }
+
+        h1 {
+            font-size: 700;
+            color: $driverTextColor;
+            @include fluid-type(46px, 90px);
+            margin: 0 0 30px 0;
+        }
+
+    }
+}

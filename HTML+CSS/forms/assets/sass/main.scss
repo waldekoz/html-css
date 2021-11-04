@@ -1,0 +1,66 @@
+@import 'normalize';
+
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+
+    .row {
+        margin: 0 0 15px 0;
+    }
+
+    .default-label,
+    label:not(.radio-label):not(.checkbox-label) {
+        display: block;
+        margin: 0 0 10px 0;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        border-radius: 4px;
+        padding: 6px 10px;
+        border: 1px solid #000000;
+        outline: none;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: aqua;
+    }
+
+    textarea {
+        width: 100%;
+        border-radius: 4px;
+        padding: 6px 10px;
+        border: 1px solid #000000;
+        min-height: 100px;
+        resize: vertical;
+    }
+
+    select {
+        width: 100%;
+        border-radius: 4px;
+        padding: 6px 10px;
+        border: 1px solid #000000;
+        outline: none;
+        appearance: none;
+        background-image: url(../img/arrow-down.png);
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+    }
+
+    input[type="radio"] {
+        display: none;
+
+        &:checked {
+            &+.radio-label {
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+    }

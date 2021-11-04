@@ -1,0 +1,125 @@
+.container {
+    max-width: 1170px;
+    padding: 0 15px 0 15px;
+    margin: 0 auto;
+    background-color: bisque;
+}
+
+.simple-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.simple-flex div {
+    width: 25%;
+    background-color: burlywood;
+}
+
+.menu .logo {
+    align-self: flex-end;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    font-size: 100px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orders {
+    display: flex;
+}
+
+.orders div {
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+.orders .o3 {
+    order: 1;
+}
+
+.orders .o1 {
+    order: 3;
+}
+
+.orders .o2 {
+    order: 2;
+}
+
+.grow {
+    font-display: flex;
+}
+
+.grow div {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.gallery .photo {
+    width: 25%;
+    padding: 0 15px;
+    margin: 0 0 30px 0;
+}
+
+.gallery .photo a {
+    display: block;
+    overflow: hidden;
+}
+
+.gallery .photo a img {
+    display: block;
+    width: 100%;
+}
+
+.gallery .photo a:hover img {
+    transform: scale(1.2);
+}
+
+.gallery-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.gallery-2 .photo {
+    width: 25%;
+
+
+}
+
+.gallery-2 .photo a {
+    display: block;
+    overflow: hidden;
+}
+
+.gallery-2 .photo a img {
+    display: block;
+    width: 100%;
+    transition: 3s;
+}
+
+.gallery-2 .photo a:hover img {
+    transform: scale(1.2);
+}

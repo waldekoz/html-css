@@ -1,0 +1,57 @@
+.background-color {
+    height: 100vh;
+    background-color: #579696;
+}
+
+.background-rgba {
+    height: 100vh;
+    background-color: rgba(122, 56, 56, 0.2);
+}
+
+.background-small-img {
+    height: 100vh;
+    background-image: url("../img/small-cat.jpg");
+}
+
+.background-repeat {
+    height: 100vh;
+    background-image: url("../img/small-cat.jpg");
+    background-repeat: no-repeat;
+
+}
+
+.background-position {
+    height: 100vh;
+    background-image: url("../img/small-cat.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.background-position {
+    height: 100vh;
+    background-image: url("../img/small-cat.jpg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+
+.background-big-img {
+    height: 100vh;
+    background-image: url("../img/winter.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+
+}
+
+.background-big-my {
+    height: 100vh;
+    background-image: url("../img/casey-horner-5IDHgcr3Nvg-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
+
+
+}

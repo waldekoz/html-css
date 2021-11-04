@@ -1,0 +1,69 @@
+.study {
+    padding: 100px 0;
+    background-color: $studyBgColor;
+
+    .program {
+        border-radius: 4px;
+        margin: 0 0 20px 0;
+
+        .photo {
+            position: relative;
+
+            img {
+                border-radius: 4px 4px 0 0;
+            }
+
+            .circle {
+                background-color: $primaryColor;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                bottom: -40px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 3;
+
+
+                i {
+                    color: $secondaryColor;
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .description {
+            background-color: $quaternaryColor;
+            padding: 70px 30px;
+            border-radius: 0px 0px 4px 4px;
+            position: relative;
+
+            h2 {
+                margin: 0 0 20px 0;
+                color: $teriaryColor;
+                font-size: 22px;
+                font-weight: 700;
+
+            }
+
+            p {
+                line-height: 1.5;
+                margin: 0;
+            }
+
+            .btn {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                white-space: nowrap;
+                bottom: -20px;
+            }
+
+
+        }
+
+    }
+}

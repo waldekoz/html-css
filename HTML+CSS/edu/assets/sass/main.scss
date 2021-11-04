@@ -1,0 +1,14 @@
+@import "normalize";
+@import "variables";
+@import "mixins";
+@import "global";
+
+@import "parts/driver";
+@import "parts/infoboxes";
+@import "parts/navigation";
+@import "parts/aboutus";
+@import "parts/study";
+@import "plugins/owl.carousel";
+@import "plugins/owl.theme.default";
+@import "parts/video";
+@import "parts/covid";

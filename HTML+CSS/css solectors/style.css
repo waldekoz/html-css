@@ -1,0 +1,31 @@
+p{
+    font-size: 40px;
+     color: green;
+}
+div{
+    background-color: bisque;
+    color: purple;
+}
+
+div p{
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+a{
+    text-decoration: none
+}
+div p a{
+    color: pink
+}
+p a{
+    color: black;
+
+
+}
+
+body{
+    background-color: gray;
+    
+}

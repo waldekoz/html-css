@@ -1,0 +1,61 @@
+@import "normalize";
+@import "variables";
+@import "mixins";
+@import"socialButtons";
+
+body {
+    background-color: $bodyBgColor;
+}
+
+
+.box {
+    width: 500px;
+    height: 500px;
+    background-color: #9d9d9d;
+
+    &.green {
+        background-color: green;
+
+    }
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            color: bisque;
+        }
+    }
+}
+
+.menu {
+    background-color: #ffec42;
+    padding: 15px 0;
+
+
+    ul {
+        @include clearListStyle;
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin: 0 40px 0 0;
+
+            &:last-child {
+                margin: 0;
+            }
+
+            a {
+                padding: 10px;
+                background-color: hotpink;
+                color: indigo;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .header {
+        @include fluid-type(320px, 1170px, 30px, 70px)
+    }
+
+
+}

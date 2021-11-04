@@ -1,0 +1,48 @@
+.aboutus {
+    padding: 50px 0;
+
+    .container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .column {
+            padding: 0 15px;
+            width: 50%;
+
+            @media (max-width: 700px) {
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+
+                @media (max-width:700px) {
+                    margin: 0 0 30px 0;
+                }
+
+            }
+
+            .title {
+                color: $secondaryColor;
+                font-size: 18px;
+                font-weight: 500;
+                text-transform: uppercase;
+                margin: 0 0 20px 0;
+            }
+
+            h2 {
+                margin: 0 0 30px 0;
+                color: $teriaryColor;
+                font-weight: 700;
+                @include fluid-type(26px, 36px);
+            }
+
+            .description {
+                margin: 0 0 30px 0;
+                line-height: 1.5;
+            }
+        }
+
+    }
+}

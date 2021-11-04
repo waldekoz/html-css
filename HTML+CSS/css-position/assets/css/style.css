@@ -1,0 +1,180 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    height: 5000px;
+    margin: 99px 0 0 0;
+}
+
+
+.navigation {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+
+    background-color: brown;
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 0 20px 0;
+
+
+}
+
+.navigation li {
+    display: inline-block;
+    margin-left: 20px;
+
+
+}
+
+.navigation li:first-child {
+    margin: 0;
+}
+
+.navigation li a {
+    display: block;
+    text-decoration: none;
+    background-color: chartreuse;
+    color: crimson;
+    padding: 20px;
+    transition: 0.2s;
+}
+
+.navigation li a:hover {
+    background-color: darkgray;
+    color: black;
+}
+
+.scroll-to-top {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: aquamarine;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.scroll-to-top {
+    position: 20px;
+}
+
+.block {
+    height: 100vh;
+}
+
+.boxes {
+    width: 700px;
+    height: 700px;
+    background-color: bisque;
+    position: relative;
+}
+
+.boxes .box {
+    height: 44px;
+    width: 44px;
+    background-color: chartreuse;
+    position: absolute;
+}
+
+.boxes .box.tr {
+    top: 0;
+    right: 0;
+}
+
+.boxes .box.tl {
+    top: 0;
+    left: 0;
+}
+
+.boxes .box.bl {
+    bottom: 0;
+    left: 0;
+}
+
+.boxes .box.br {
+    bottom: 0;
+    right: 0;
+}
+
+.boxes .box.center {
+    top: 50%;
+    left: 50%;
+    /*margin: -100px 0 0 -100px;*/
+    transform: translateX(-50%) translateY(-50%);
+    /*transform: translate(50% 50%)*/
+}
+
+.cards img {
+    position: absolute;
+}
+
+.cards {
+    position: relative;
+}
+
+.cards .img.second {
+    top: 80px;
+    left: 80px;
+    z-index: 100;
+
+}
+
+.cards img.third {
+    top: 40px;
+    left: 40px;
+    z-index: 100;
+}
+
+.cards img.first {
+    z-index: 100;
+}
+
+.cards {
+    height: 400px;
+}
+
+.mask {
+    position: relative;
+}
+
+.mask img {
+    display: block;
+    width: 100%;
+}
+
+.mask .mask-overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 150;
+
+}
+
+.mask h1 {
+    position: absolute;
+    font-size: 100px;
+    margin: 0;
+    top: 50%;
+    color: #ffffff;
+    z-index: 151;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}

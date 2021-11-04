@@ -1,0 +1,160 @@
+@import 'normalize';
+@import 'hamburgers/hamburgers';
+
+@media(max-width:700px) {
+
+    body.menu-open {
+        nav {
+            .container {
+                .menu {
+                    display: flex;
+                    height: calc(100vh - 112px);
+                    position: absolute;
+                    z-index: 130;
+                    top: 112px;
+                    left: 0;
+                    width: 100%;
+                    justify-content: center;
+                    background-color: #efefef;
+                    align-items: center;
+
+
+
+                    ul {
+                        flex-direction: column;
+
+                        li {
+                            margin: 0 0 15px 0;
+                            text-align: center;
+
+
+                            &:last-child {
+                                margin: 0;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+nav {
+    background-color: #efefef;
+    padding: 15px 0;
+
+    .container {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            img {
+                display: block;
+                width: 100px;
+            }
+        }
+
+        .menu {
+            @media (max-width:700px) {
+                display: none;
+
+            }
+
+            ul {
+                display: flex;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+
+
+                li {
+                    margin: 0 30px 0 0;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #000000;
+                        font-weight: 700;
+                        text-transform: capitalize;
+                    }
+                }
+
+            }
+        }
+
+        .my-burger {
+            background-color: none;
+            height: 32px;
+            width: 32px;
+            border: none;
+            background: none;
+            outline: none;
+            position: relative;
+            cursor: pointer;
+            display: none;
+
+            @media (max-width: 700px) {
+                display: block;
+            }
+
+            span {
+                height: 5px;
+                position: absolute;
+                width: 100%;
+                background-color: #ee1330;
+
+                &:nth-of-type(1) {
+                    top: 0;
+                    left: 0;
+
+                }
+
+                &:nth-of-type(3) {
+                    bottom: 0;
+                    left: 0;
+                }
+
+                &:nth-of-type(2) {
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+
+                }
+
+
+            }
+
+            &.close {
+                span {
+                    &:nth-of-type(2) {
+                        display: none;
+
+                    }
+
+                    &:nth-of-type(1) {
+                        transform: rotate(45deg);
+                        top: 11px;
+                    }
+
+                    &:nth-of-type(3) {
+                        transform: rotate(-45deg);
+                        bottom: 15px;
+                    }
+
+                }
+
+
+            }
+        }
+
+
+    }
+}

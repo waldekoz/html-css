@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <form method="GET" action="" enctype="multipart/form-data">
+
+        <div class="row">
+            <label for="input-name-surname">imie i nazwisko:</label>
+            <input type="text" id="input-name-surname" name="name-surname" placeholder="np. jan kowalski">
+        </div>
+
+        <div class="row">
+            <label for="input-email">Adres email</label>
+            <input type="email" name="email" id="input-email" value="rekkr79@gmail.com">
+        </div>
+
+
+        <div class="row">
+            <label for="input-code">tajne hasło</label>
+            <input type="password" name="code" id="input-code">
+        </div>
+
+        <div class="row">
+            <label for="select-country">wybierz kraj:</label>
+            <select name="country" id="select-country">
+                <option value="">np. Norwegia</option>
+                <option value="pl">Polska</option>
+                <option value="de">Niemcy</option>
+                <option value="ru" selected>Rosja</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <label for="textarea">wiadomość</label>
+            <textarea name="message" id="textarea">okoń</textarea>
+        </div>
+
+        <p class="default-label">wybierz płeć</p>
+
+        <div class="row">
+            <input type="radio" name="sex" value="female" id="radio-female">
+            <label for="radio-female" class="radio-label">Kobieta</label>
+
+        </div>
+
+
+        <div class="row">
+            <input type="radio" name="sex" value="male" id="radio-male">
+            <label for="radio-male" class="radio-label">Mężczyzna</label>
+
+        </div>
+
+        <p class="default-label">wybierz zainteresowania</p>
+
+        <div class="row">
+            <input type="checkbox" name="hobby" value="esport" id="checkbox-esport">
+            <label for="checkbox-esport" class="checkbox-label">esport</label>
+        </div>
+
+        <div class="row">
+            <input type="checkbox" name="hobby" value="movies" id="checkbox-movies">
+            <label for="checkbox-movies" class="checkbox-label">programowanie</label>
+
+        </div>
+
+        <div class="row">
+            <input type="checkbox" name="hobby" value="książka" id="checkbox-reading">
+            <label for="checkbox-reading" class="checkbox-label">książka</label>
+
+        </div>
+        <div class="row">
+            <input type="checkbox" name="hobby" value="sport" id="checkbox-sporting">
+            <label for="checkbox-sporting" class="checkbox-label">sport</label>
+
+        </div>
+
+
+        <div class="row">
+            <label for="input-photo" class="upload-file">Dodaj plik zdjęciowy</label>
+            <input type="file" name="photo" id="input-photo">
+
+        </div>
+
+
+
+
+
+        <div class="row">
+            <button type="submit">wyślij formulaz</button>
+        </div>
+
+    </form>
+
+</body>
+
+</html>

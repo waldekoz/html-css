@@ -1,0 +1,40 @@
+body {
+    font-family: $mainFontFamily;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $headerFontFamily;
+    color: $mainTextColor;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    background-color: $secondaryColor;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 4px;
+    color: $teriaryColor;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: .3s;
+
+    &:hover {
+        color: $quaternaryColor;
+        background-color: $primaryColor;
+
+    }
+}

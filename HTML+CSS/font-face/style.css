@@ -1,0 +1,13 @@
+.roboto-font {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.to-do li:nth-child(even) {
+    font-family: 'Nerko One', cursive;
+}
+
+.to-do li:nth-child(odd) {
+    font-family: 'Oswald', sans-serif;
+}

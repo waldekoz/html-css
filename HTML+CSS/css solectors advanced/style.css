@@ -1,0 +1,56 @@
+.box-pink{
+    background-color:pink
+}
+.box-grey{
+    background-color:grey
+}
+p.box-grey{
+        background-color: aqua;
+    }
+.square{
+    background-color: grey;
+    height: 300px;
+    width: 300px;
+}
+
+.square.bg-green{
+    background-color:  green;
+}
+.links .button{
+
+    text-decoration: none;
+    font-size: 20px;
+    color: tomato;
+    transition: 1s;
+}
+.links .button span{
+    font-weight: 700;
+}
+
+.links .button:hover{
+    color: black;
+}
+
+#uniq-box{
+    background-color: violet;
+}
+.avatar img{
+    border-radius: 50%;
+    width: 300px;
+    height:300px;
+    filter:grayscale(100%);
+    transition: 1s;
+}
+
+
+.avatar img:hover{
+    filter:grayscale(0)
+}
+.to-do li:nth-child(even){}
+   background-color: wheat;
+
+}
+
+.to-do li:last-child{
+    front-weight: 700;
+}

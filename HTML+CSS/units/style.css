@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+}
+
+
+body {
+    margin: 0;
+}
+
+.box-px {
+    width: 300px;
+    height: 300px;
+    background-color: antiquewhite;
+}
+
+.box-percent {
+    width: 50%;
+    height: 400px;
+    background-color: chocolate;
+}
+
+.box-percent div {
+    width: 50%;
+    height: 75%;
+    background-color: cornflowerblue;
+}
+
+
+.driver {
+    background-color: darkkhaki;
+    height: 100vh;
+
+}
+
+.driver h1 {
+    margin: 0;
+}
+
+.news {
+    font-size: 10px;
+}
+
+.news .intro {
+    font-size: 1.5em;
+}
+
+.news .intro strong {
+    font-size: 1.4em;
+}
+
+.news .description p {
+    font-size: 1rem;
+}
+
+.news .description p span {
+    font-size: 1.5rem;
+}

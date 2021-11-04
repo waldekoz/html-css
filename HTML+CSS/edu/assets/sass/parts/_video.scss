@@ -1,0 +1,30 @@
+.video {
+    padding: 250px 0 250px 0;
+    background-image: url("../img/video2.jpg");
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    @media (max-width: 600px) {
+        padding: 150px 0 150px 0;
+    }
+
+    a {
+        display: flex;
+        font-size: 30px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: $secondaryColor;
+        color: $primaryColor;
+        align-items: center;
+        justify-content: center;
+
+
+
+
+    }
+
+}

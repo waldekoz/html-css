@@ -1,0 +1,67 @@
+.btn-social {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+
+    &.animate {
+        i {
+            position: relative;
+            animation: jump .5s infinite;
+        }
+    }
+
+
+
+
+    @each $name,
+    $color in $socialMedia {
+        &.btn-#{$name} {
+            background-color: $color;
+
+            &:hover {
+                color: $color;
+                background-color: #ffffff;
+            }
+
+            &.square {
+                color: $color;
+                background-color: #ffffff;
+                border-radius: 0;
+                border: 2px solid $color;
+
+                &:hover {
+                    background-color: $color;
+                    color: #ffffff;
+                }
+
+            }
+        }
+
+
+    }
+}
+
+@keyframes jump {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: 7px;
+
+    }
+
+    75% {
+        top: 10px
+    }
+
+    100% {
+        top: 0;
+    }
+}

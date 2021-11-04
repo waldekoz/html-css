@@ -1,0 +1,53 @@
+.covid {
+
+    .boxes {
+        display: flex;
+        flex-wrap: wrap;
+
+        @media(min-width: 801px) {}
+
+        ;
+
+        &:nth-of-type(even) {
+            .left {
+                order: 2;
+            }
+
+            .right {
+                order: 1;
+            }
+        }
+
+        .left {
+            width: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            @media(max-width:800px) {
+                width: 100%;
+            }
+
+            img {
+                display: none;
+
+                @media(max-width:800px) {
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+
+        .right {
+            width: 50%;
+            padding: 100px;
+            background-color: $primaryColor;
+            color: $quaternaryColor;
+
+            @media(max-width:800px) {
+                width: 100%;
+            }
+
+        }
+    }
+}

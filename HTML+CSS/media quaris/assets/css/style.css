@@ -1,0 +1,50 @@
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background-color: aliceblue;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    padding: 50px 0;
+}
+
+.gallery .photo {
+    width: 25%;
+    padding: 0 15px;
+    margin: 0 0 30px 0;
+}
+
+.gallery .photo img {
+    display: block;
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .gallery .photo {
+        width: calc(100% / 3);
+    }
+}
+
+@media (max-width: 700px) {
+    .gallery .photo {
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .gallery .photo {
+        width: 100%;
+    }
+}
+@media(orientation landscape){
+    .responsive span:nth-child(1){
+
+
+    display: none;
+}
+@media(orientation:nth-child(portrait)

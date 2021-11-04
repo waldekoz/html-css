@@ -1,0 +1,42 @@
+.test {
+    font-size: 20px;
+
+    &::after {
+        content: 'Jestem z tyłu';
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    &::before {
+        content: 'jestem z przodu';
+    }
+}
+
+.btn {
+    display: block;
+    width: 200px;
+    height: 100px;
+    background-color: bisque;
+    text-decoration: none;
+    position: relative;
+
+
+    &::after {
+        position: absolute;
+        height: 100%;
+        width: 0;
+        background-color: chartreuse;
+        content: '';
+        left: 50%;
+        top: 0;
+        transition: 4s;
+    }
+
+    &:hover {
+        &::after {
+            width: 100%;
+            left: 0;
+
+        }
+    }
+}
